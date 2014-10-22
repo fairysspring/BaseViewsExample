@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A92D7D1619F7FDB900AF3DD8 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A92D7D1519F7FDB900AF3DD8 /* UIViewAdditions.m */; };
 		A9911A0919F0C2700090B87B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9911A0819F0C2700090B87B /* Foundation.framework */; };
 		A9911A0B19F0C2700090B87B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9911A0A19F0C2700090B87B /* CoreGraphics.framework */; };
 		A9911A0D19F0C2700090B87B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9911A0C19F0C2700090B87B /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A92D7D1419F7FDB900AF3DD8 /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
+		A92D7D1519F7FDB900AF3DD8 /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
 		A9911A0519F0C2700090B87B /* BaseViewsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseViewsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9911A0819F0C2700090B87B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A9911A0A19F0C2700090B87B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +122,8 @@
 				A9911A1E19F0C2700090B87B /* ViewController.m */,
 				A9911A2019F0C2700090B87B /* Images.xcassets */,
 				A9911A0F19F0C2700090B87B /* Supporting Files */,
+				A92D7D1419F7FDB900AF3DD8 /* UIViewAdditions.h */,
+				A92D7D1519F7FDB900AF3DD8 /* UIViewAdditions.m */,
 			);
 			path = BaseViewsExample;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92D7D1619F7FDB900AF3DD8 /* UIViewAdditions.m in Sources */,
 				A9911A1F19F0C2700090B87B /* ViewController.m in Sources */,
 				A9911A1919F0C2700090B87B /* AppDelegate.m in Sources */,
 				A9911A1519F0C2700090B87B /* main.m in Sources */,
@@ -456,6 +462,7 @@
 				A9911A3919F0C2700090B87B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9911A3A19F0C2700090B87B /* Build configuration list for PBXNativeTarget "BaseViewsExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +471,7 @@
 				A9911A3C19F0C2700090B87B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
