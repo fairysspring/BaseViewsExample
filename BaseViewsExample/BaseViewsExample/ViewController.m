@@ -10,6 +10,8 @@
 #import "UIViewAdditions.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
+@property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
 
 @end
 
@@ -20,7 +22,10 @@
     [super viewDidLoad];
     [self testButton_sizetofit];
     [self testLabel_sizetofit];
+    [self testToolBar];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    
 }
 
 - (void)testLabel_sizetofit
@@ -50,6 +55,49 @@
     button.contentEdgeInsets = UIEdgeInsetsMake(30, 30, 30, 30);
     [button sizeToFit];
     [self.view addSubview:button];
+    
+}
+
+- (void)testToolBar
+{
+    UIToolbar *toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 40, self.view.width, 50)];
+    [self.view addSubview:toolBar];
+    toolBar.translucent = YES	;
+    
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 200, 30)];
+    button.backgroundColor = [UIColor redColor];
+    button.layer.cornerRadius = 8;
+    button.layer.masksToBounds = YES;
+    
+    [toolBar addSubview:button];
+    
+    UIToolbar *toolBarView = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 300, 320, 30)];
+    [toolBarView setBarStyle:UIBarStyleDefault];
+    
+    UIBarButtonItem *firstButton = [[UIBarButtonItem alloc] initWithTitle:@"First" style:UIBarButtonItemStyleBordered target:self action:nil];
+    UIBarButtonItem *spaceButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    UIBarButtonItem *secondButton = [[UIBarButtonItem alloc] initWithTitle:@"Second" style: UIBarButtonItemStyleDone target:self action:@selector(dismissKeyboard:)];
+    UIBarButtonItem *spaceButton2 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    UIBarButtonItem *secondButton2 = [[UIBarButtonItem alloc] initWithTitle:@"Second" style: UIBarButtonItemStyleDone target:self action:@selector(dismissKeyboard:)];
+    secondButton.tintColor = [UIColor clearColor];
+    
+    NSArray *buttonArray = [NSArray arrayWithObjects:firstButton, spaceButton, secondButton,spaceButton2, secondButton2, nil];
+    [toolBarView setItems:buttonArray];
+//    toolBarView.barTintColor = [UIColor redColor];
+    [self.view addSubview:toolBarView];
+    
+
+    
+    
+    
+    
+    
+    
+   // UIBarButtonItem *item1 = []
+}
+
+- (void)dismissKeyboard:(id)send
+{
     
 }
 
