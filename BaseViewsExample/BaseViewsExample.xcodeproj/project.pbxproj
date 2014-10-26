@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A92D7D1619F7FDB900AF3DD8 /* UIViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A92D7D1519F7FDB900AF3DD8 /* UIViewAdditions.m */; };
+		A93DD86819FC0B4900029821 /* ImageTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A93DD86719FC0B4900029821 /* ImageTitleButton.m */; };
+		A93DD87119FC183000029821 /* AvarageManageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A93DD87019FC183000029821 /* AvarageManageView.m */; };
+		A93DD87419FC187900029821 /* AverageTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = A93DD87319FC187900029821 /* AverageTestView.m */; };
 		A9911A0919F0C2700090B87B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9911A0819F0C2700090B87B /* Foundation.framework */; };
 		A9911A0B19F0C2700090B87B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9911A0A19F0C2700090B87B /* CoreGraphics.framework */; };
 		A9911A0D19F0C2700090B87B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9911A0C19F0C2700090B87B /* UIKit.framework */; };
@@ -37,6 +40,12 @@
 /* Begin PBXFileReference section */
 		A92D7D1419F7FDB900AF3DD8 /* UIViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewAdditions.h; sourceTree = "<group>"; };
 		A92D7D1519F7FDB900AF3DD8 /* UIViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewAdditions.m; sourceTree = "<group>"; };
+		A93DD86619FC0B4900029821 /* ImageTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTitleButton.h; sourceTree = "<group>"; };
+		A93DD86719FC0B4900029821 /* ImageTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTitleButton.m; sourceTree = "<group>"; };
+		A93DD86F19FC183000029821 /* AvarageManageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvarageManageView.h; sourceTree = "<group>"; };
+		A93DD87019FC183000029821 /* AvarageManageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvarageManageView.m; sourceTree = "<group>"; };
+		A93DD87219FC187900029821 /* AverageTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AverageTestView.h; sourceTree = "<group>"; };
+		A93DD87319FC187900029821 /* AverageTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AverageTestView.m; sourceTree = "<group>"; };
 		A9911A0519F0C2700090B87B /* BaseViewsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseViewsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9911A0819F0C2700090B87B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A9911A0A19F0C2700090B87B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -124,6 +133,12 @@
 				A9911A0F19F0C2700090B87B /* Supporting Files */,
 				A92D7D1419F7FDB900AF3DD8 /* UIViewAdditions.h */,
 				A92D7D1519F7FDB900AF3DD8 /* UIViewAdditions.m */,
+				A93DD86619FC0B4900029821 /* ImageTitleButton.h */,
+				A93DD86719FC0B4900029821 /* ImageTitleButton.m */,
+				A93DD86F19FC183000029821 /* AvarageManageView.h */,
+				A93DD87019FC183000029821 /* AvarageManageView.m */,
+				A93DD87219FC187900029821 /* AverageTestView.h */,
+				A93DD87319FC187900029821 /* AverageTestView.m */,
 			);
 			path = BaseViewsExample;
 			sourceTree = "<group>";
@@ -255,9 +270,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A92D7D1619F7FDB900AF3DD8 /* UIViewAdditions.m in Sources */,
+				A93DD86819FC0B4900029821 /* ImageTitleButton.m in Sources */,
 				A9911A1F19F0C2700090B87B /* ViewController.m in Sources */,
+				A93DD87419FC187900029821 /* AverageTestView.m in Sources */,
 				A9911A1919F0C2700090B87B /* AppDelegate.m in Sources */,
 				A9911A1519F0C2700090B87B /* main.m in Sources */,
+				A93DD87119FC183000029821 /* AvarageManageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
