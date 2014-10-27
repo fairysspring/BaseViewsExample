@@ -10,6 +10,7 @@
 #import "UIViewAdditions.h"
 #import "ImageTitleButton.h"
 #import "AverageTestView.h"
+#import "NSCalendar+Util.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *barButton;
@@ -22,6 +23,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self test_timeInfo];
+    
+    [self test_serialize];
 //    [self test_AverageView];
 //    return;
     [self test_UIButtonImage_Title];
@@ -36,6 +40,22 @@
     
 }
 
+- (void)test_timeInfo
+{
+    NSDate *start = [NSDate date];
+    NSDate *end = [NSDate dateWithTimeIntervalSinceNow:10*60*60];
+    NSCalendar *calender = [NSCalendar currentCalendar];
+    int a = [calender daysWithinEraFromDate:start toDate:end];
+}
+
+- (void)test_serialize
+{
+    NSArray *arr = @[@{@"1":@"no1",@"2":@"no2"},@{@"1":@"no1",@"2":@"no2"}];
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:arr];
+    NSArray *newArr = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    NSLog(@"arr - %@",arr);
+    NSLog(@"newArr - %@",newArr);
+}
 - (void)test_AverageView
 {
     AverageTestView *view = [[AverageTestView alloc] initWithFrame:CGRectMake(0, 100,self.view.width, 55)];
